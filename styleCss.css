@@ -1,0 +1,47 @@
+body{
+    background: #000;
+}
+
+.box{
+    display: grid;
+    font-weight: 500;
+    place-items: center;
+    height: 100vh;
+    font-family:  Gabriola;
+    text-align: center;
+}
+
+.box p{
+    font-size: 150px;
+    text-transform: uppercase;
+    color: #ffd9e2;
+    text-shadow: 0 0 0 transparent,
+                0 0 10px #00c8ff,
+                0 0 20px rgba(37, 227, 244, 0.5),
+                0 0 40px #10d7ed,
+                0 0 100px #ff003c,
+                0 0 200px #ff003c,
+                0 0 300px #ff003c,
+                0 0 500px #ff003c,
+                0 0 1000px #ff003c;
+
+    animation: animate 0.5s infinite alternate;            
+}
+
+@keyframes animate{
+    20%{
+        opacity: 1;
+    }
+    12%{
+        opacity: 0.8;
+    }
+    23%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0.3;
+    }
+    250%{
+        opacity: 1;
+    }
+}
